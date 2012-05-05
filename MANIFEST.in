@@ -1,0 +1,2 @@
+recursive-include lx *
+global-exclude *pyc
