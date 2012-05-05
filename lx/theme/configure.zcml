@@ -5,8 +5,9 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="lx.theme">
-    
-  <plone:static directory="static" type="theme" name="lx.theme" />
+
+  <plone:static directory="static/advanced-spa-site" name="lx.theme.advancedspa" type="theme" />
+  <plone:static directory="static/multiclinicas-site" name="lx.theme.multiclinicas" type="theme" />
   
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".browser" />

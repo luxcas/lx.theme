@@ -1,4 +1,6 @@
 <theme>
-    <name>lx.theme</name>
-    <enabled>true</enabled>
+    <name>lx.theme.advancedspa</name>
+    <enabled>false</enabled>
+    <name>lx.theme.multiclinicas</name>
+    <enabled>false</enabled>
 </theme>

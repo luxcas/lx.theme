@@ -1,0 +1,55 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Head: title -->
+    <replace content="/html/head/title" theme="/html/head/title" />
+    <!-- Base tag -->
+    <replace content="/html/head/base" theme="/html/head/base" />
+    <!-- meta tag -->
+    <replace content="/html/head/meta" theme="/html/head/meta" />
+   <!-- Drop styles in the head - these are added back by including them from Plone -->
+    <!--
+    <drop theme="/html/head/link" />
+    <drop theme="/html/head/style" />
+    -->
+    <!-- Pull in Plone CSS -->
+    <prepend content="/html/head/link | /html/head/style " theme="/html/head"/>
+    <!--before content='/html/head' theme='/html/head' /-->
+
+    <!-- Pull in Plone JS -->
+    <after content="/html/head/script" theme="/html/head"/>
+
+    <!-- Body class -->
+    <copy attributes="class" css:theme="body" css:content="body"/>
+    
+    <!-- Pull in global navigation menu-->
+    <replace content-children='//*[@id="portal-globalnav"]' theme-children='//*[@class="sf-menu"]' />
+    
+    <!-- Pull in personal tools -->
+    <prepend content='//*[@id="portal-personaltools-wrapper"]' theme='//*[@id="logo"]' />
+    <!-- Pull in search box -->
+    <replace content='//*[@id="portal-searchbox"]' theme='//*[@id="busca"]' />
+    <!-- Pull in content -->
+    <copy content='//*[@id="portal-column-content"]' theme-children='//*[@id="content"]' />
+    <!-- Drop global navigation menu's class-->
+    <drop attributes="class" css:content="#portal-column-content"/>
+    <!-- Pull in column 1 -->
+    <copy content='//*[@id="portal-column-one"]' theme='//*[@class="column-left"]' />
+    <!-- Drop global navigation menu's class-->
+    <drop attributes="class" css:content="#portal-column-one"/>
+    <copy content='//*[@id="portal-footer"]' theme='//*[@id="footer"]' />
+	<append content='//*[@id="portal-colophon"]' theme='//*[@id="footer"]' />
+	<append content='//*[@id="portal-siteactions"]' theme='//*[@id="footer"]' />
+
+    <!--copy content='//*[@id="portal-logo"]' theme='//*[@id="logo"]' /-->
+	<copy attributes="href title" css:content='#portal-logo' css:theme='#logo h1 a' />
+
+    
+    <drop theme='//*[@id="slogan"]' />
+    <drop theme='//*[@id="rss"]' />
+    <theme href="index.html" />
+    
+
+</rules>

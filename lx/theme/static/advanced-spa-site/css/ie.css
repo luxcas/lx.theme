@@ -1,0 +1,5 @@
+*+html{overflow:auto;}
+.button, .button-1, #form input, #form textarea , .form-search input, .form-search-input {behavior:url(js/PIE.htc); position:relative;}
+.tooltips a:hover {filter:alpha(opacity=70); background:#fff;}
+
+div.top {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader() !important;}

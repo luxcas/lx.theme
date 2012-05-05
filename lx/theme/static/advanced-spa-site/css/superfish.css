@@ -1,0 +1,34 @@
+.sf-menu ul {position:absolute; top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.sf-menu li {position:relative; float:left;}
+.sf-menu a {display:block;}
+.sf-menu li:hover ul,.sf-menu li.sfHover ul {z-index:99}
+ul.sf-menu li:hover li ul,ul.sf-menu li.sfHover li ul {top:-999px; display:none;}
+ul.sf-menu li li:hover ul,ul.sf-menu li li.sfHover ul {left:100%;/* match ul width */top:0;}
+/*** DEMO SKIN ***/
+
+ul.sf-menu {margin:0 0px 0 0px;}
+ul.sf-menu>li {padding:47px 0 23px 0;}
+ul.sf-menu>li>a { font-family: 'Open Sans', sans-serif; line-height:21px; font-size:15px; color:#2a2a2a; font-weight:normal; text-transform:uppercase; text-decoration:none; padding: 0 21px 0px 24px;  background:url(../images/menu-a-bg.gif) 0 0 repeat-y;}
+ul.sf-menu>li:first-child>a {background:none; padding: 0 21px 0px 0px; }
+.li-with-ul {background:url(../images/li-with-ul.gif) center 0 no-repeat; }
+
+ul.sf-menu>li.current , ul.sf-menu>li.sfHover , ul.sf-menu>li:hover {}
+ul.sf-menu>li.current>a, ul.sf-menu>li.sfHover>a, ul.sf-menu>li>a:hover {color:#e18482;}
+
+ul.sf-menu>li.sfHover>a.sf-with-ul>span.sf-sub-indicator {}
+ul.sf-menu>li.sfHover>a.sf-with-ul>span.sf-sub-indicator, ul.sf-menu>li:hover>a.sf-with-ul>span.sf-sub-indicator {background:url(../images/li-with-ul-hover.gif) 0 0 no-repeat; display:block; width:7px; height:4px; position:absolute; bottom:0px; right:50%; margin-right:-3px; z-index:100;}
+
+ul.sf-menu li>ul {background:#e18482; width:90px; padding:12px 18px 7px 16px; top:91px; left:-6px; }
+ul.sf-menu li>ul>li:first-child {border:none;}
+ul.sf-menu li>ul>li { border-top:#e49593 1px solid; width:90px; }
+ul.sf-menu li>ul>li>a { font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:16px; color:#ffffff; padding:6px 0 8px 5px; text-align:left; }
+ul.sf-menu li>ul>li:hover, ul.sf-menu li.sfHover ul>li.sfHover{}
+ul.sf-menu li.sfHover ul>li.sfHover{ background:url(../images/menu-2-hover.gif) right 12px no-repeat; }
+ul.sf-menu li>ul>li:hover>a, ul.sf-menu li.sfHover ul>li.sfHover a {color:#ffc4c3;}
+
+ul.sf-menu li ul li ul {background: #c2ae78; width:93px; padding:8px 18px 9px 13px; top:-7px !important; left:108px !important; }
+ul.sf-menu li ul li ul li:first-child {border:none;}
+ul.sf-menu li ul li ul li { background:transparent; border-top:#ccbd92 1px solid; width:93px;}
+ul.sf-menu li ul li ul li a { font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:16px; color:#ffffff !important; padding:5px 0 8px 7px; text-align:left; }
+ul.sf-menu li ul li ul li:hover { }
+ul.sf-menu li ul li ul li:hover a {color:#f7e2aa !important;}
