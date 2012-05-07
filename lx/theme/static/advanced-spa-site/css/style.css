@@ -6,7 +6,7 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 html, body {width:100%; padding:0; margin:0;}
 
 body { 	 
-	font: 12px/22px Arial, Helvetica, sans-serif;
+	
 	color:#9d9d9d;
 	min-width:960px;
 	background:#fff;
@@ -15,7 +15,7 @@ body {
 
 /***********************************************************************/
 
-a {text-decoration:none; cursor:pointer;}
+a {text-decoration:none; cursor:pointer; border: none !important;}
 a:hover {text-decoration:none;}
 
 a.button {background: #f1a2a1; font-family:Arial, Helvetica, sans-serif; color:#fff; font-size:11px; line-height:16px; font-weight:normal; text-transform:uppercase; padding:10px 17px 9px 17px; display:inline-block; border-radius:10px; }
@@ -41,14 +41,15 @@ a.color-3:hover {color:#393939;}
 a.color-5:hover {color:#bb2025;}
 .color-6 { color:#9d9d9d; font-size:12px; line-height:18px; font-style:italic;}
 
+.portletHeader{font-size:30px; line-height:44px; color:#bb2025; font-weight:normal !important; font-family: 'Satisfy', cursive;}
 
-
+h1 {font-size:38px; line-height:44px; color:#bb2025; font-weight:normal; font-family: 'Satisfy', cursive;}
 h2 {font-size:34px; line-height:44px; color:#393939; font-weight:normal; font-family: 'Satisfy', cursive;}
 h3 {font-size:34px; line-height:44px; color:#bb2025; font-weight:normal; font-family: 'Satisfy', cursive;}
 h4 {font-size:30px; line-height:40px; color:#fff; font-weight:normal; font-family: 'Satisfy', cursive;}
 
 ul {margin:0; padding:0;list-style-image:none;}
-ul.list-1 li {padding:2px 0 4px 21px; line-height:18px; background:url(../images/marker-1.png) 0 7px no-repeat;}
+ul.list-1 li {padding:2px 0 4px 21px; line-height:18px; background:url(../images/marker-1.png) 0 7px no-repeat;display: block !important;}
 ul.list-1 li a {font-size:13px; color:#ef9694; line-height:18px; display:inline-block;}
 ul.list-1 li a:hover {color:#bb2025;}
 
@@ -93,13 +94,13 @@ nav { margin:0px 0px 26px 0px; position:relative; z-index:99;}
 
 .logo {padding:101px 0px 0px 64px; width:386px; height:87px;}
 
-h1 {position:absolute; left:165px; /*left:372px;*/ bottom:-100px;}
+h1.logoh1 {position:absolute; left:165px; /*left:372px;*/ bottom:-65px;}
 
 
 /*********************************content*************************************/
-#content { width:960px; margin:0 auto; padding-bottom:59px;}
+/*#content { width:960px; margin:0 auto; padding-bottom:59px;}
 .content {padding-top:133px;}
-
+*/
 .page-1-col-1 {padding:71px 0px 6px 28px; width:912px; }
 .page-1-col-1 .extra-wrap {margin:58px 15px 0 0;}
 
@@ -219,12 +220,12 @@ div.top:hover {background:url(../images/top.png) 0 bottom no-repeat; }
   width:360px;
   height:342px;
 }
-dl {margin:28px 0px 0 0px;}
+/*dl {margin:28px 0px 0 0px;}
 dl dt {padding:0px 0 22px 0px;}
 dl dd span { display:block; width:69px; float:left;}
 dl dd {}
 dl dd a {color:#d96764 !important; font-size:12px !important; margin-left:12px;}
-dl dd a:hover {color:#393939 !important;}
+dl dd a:hover {color:#393939 !important;}*/
 
 #form { margin: 26px 0 0px 0px; width:520px; }
 #form input {
@@ -285,3 +286,17 @@ fieldset {display:block;}
 	overflow:hidden;
 }
 .btns a {margin: 21px 0px 0px 7px;}
+
+* li {
+    display: inline !important;
+}
+
+dl.portlet dt, div.portletAssignments div.portletHeader {
+    background: none repeat scroll 0 0 #fff !important;
+    line-height: normal;
+    padding: 0.42em 1em;
+}
+
+#home-wrap{}
+#content {
+    font-size: 100% !important;}
