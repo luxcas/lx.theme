@@ -15,6 +15,9 @@ ul.sf-menu>li:first-child>a {background:none; padding: 0 21px 0px 0px; }
 ul.sf-menu>li.current , ul.sf-menu>li.sfHover , ul.sf-menu>li:hover {}
 ul.sf-menu>li.current>a, ul.sf-menu>li.sfHover>a, ul.sf-menu>li>a:hover {color:#e18482;}
 
+ul.sf-menu>li.selected , ul.sf-menu>li.sfHover , ul.sf-menu>li:hover {}
+ul.sf-menu>li.selected>a, ul.sf-menu>li.sfHover>a, ul.sf-menu>li>a:hover {color:#e18482;}
+
 ul.sf-menu>li.sfHover>a.sf-with-ul>span.sf-sub-indicator {}
 ul.sf-menu>li.sfHover>a.sf-with-ul>span.sf-sub-indicator, ul.sf-menu>li:hover>a.sf-with-ul>span.sf-sub-indicator {background:url(../images/li-with-ul-hover.gif) 0 0 no-repeat; display:block; width:7px; height:4px; position:absolute; bottom:0px; right:50%; margin-right:-3px; z-index:100;}
 

@@ -3,9 +3,19 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
-    <theme href="index-3.html" css:if-content="#visual-portal-wrapper"/>
+    <theme href="index-3.html" css:if-content="#visual-portal-wrapper" />
+
+    <!--<notheme if-path="select_default_page" />
+    <notheme if-path="contact-info" />
+    <notheme if-path="login" />
+    <notheme if-path="/portal_javascripts/Lx Theme/plugins/ploneimage/ploneimage.htm" />-->
+    
+    
     <notheme css:if-content="#login_form" />
+    <notheme css:if-content-children=".plonepopup" />
+    
     <drop theme="#home-wrap" css:if-content=".portaltype-document" />
+    
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">
 
@@ -14,36 +24,25 @@
         <!-- Base tag -->
         <replace content="/html/head/base" theme="/html/head/base" />
         <!-- meta tag -->
-        
         <after content="/html/head/meta" theme-children="/html/head" />
        <!-- Drop styles in the head - these are added back by including them from Plone -->
-        <!--
-        <drop theme="/html/head/link" />
-        <drop theme="/html/head/style" />
-        -->
         <!-- Pull in Plone CSS -->
         <prepend content="/html/head/link | /html/head/style " theme="/html/head"/>
-        <!--before content='/html/head' theme='/html/head' /-->
-    
         <!-- Pull in Plone JS -->
         <after content="/html/head/script" theme="/html/head"/>
-    
         <!-- Body class -->
         <copy attributes="class" css:theme="body" css:content="body"/>
-
         <merge attributes="class" css:content="body" css:theme="body" />
         <copy attributes="id dir" css:content="body" css:theme="body" />
-        
         <!-- Logo -->
         <replace css:content='#portal-logo' css:theme-children=".logoh1" />
-        
         <!-- Navigation -->
         <replace css:content=".navTree li" css:theme-children="#menu-navtree" />
         <drop css:content=".navTree" />
-        
         <!-- siteActions -->
         <replace css:content-children="#portal-siteactions li" css:theme-children="#site-action" />
-        
+        <!-- Galeria imagem -->
+        <replace css:content-children=".photoAlbumEntry" css:theme-children=".box-5 a" />
         <!-- Pull in global navigation menu-->
         <replace content-children='//*[@id="portal-globalnav"]' theme-children='//*[@class="sf-menu"]' />
         <!-- Pull in personal tools -->
@@ -51,33 +50,17 @@
         <!-- Pull in search box -->
         <replace content='//*[@id="portal-searchbox"]' theme='//*[@id="busca"]' />
         <!-- Pull in content -->
-
         <replace content-children='//*[@id="portal-column-content"]' theme-children='//*[@id="front-home"]' />
-       
         <replace content-children='//*[@id="portal-column-one"]' theme-children='//*[@id="portlet-home-one"]' />
-         
-    <!--    <replace content-children='//*[@id="portal-column-two"]' theme-children='//*[@id="portlet-home-two"]' />-->
-        
         <!-- Drop global navigation menu's class-->
-        
         <!-- Pull in column 1 -->
         <copy content='//*[@id="portal-column-one"]' theme='//*[@class="column-left"]' />
-        
         <!-- Drop global navigation menu's class-->
-        
         <copy content='//*[@id="portal-footer"]' theme='//*[@id="footer"]' />
         <append content='//*[@id="portal-colophon"]' theme='//*[@id="footer"]' />
         <append content='//*[@id="portal-siteactions"]' theme='//*[@id="footer"]' />
-    
-        <!--copy content='//*[@id="portal-logo"]' theme='//*[@id="logo"]' /-->
         <copy attributes="href title" css:content='#portal-logo' css:theme='#logo h1 a' />
-    
-        
-        <drop theme='//*[@id="slogan"]' />
-        <drop theme='//*[@id="rss"]' />
-        
+        <replace content-children='//*[@id="content"]' theme-children='//*[@id="gal-imagens"]' />
         
     </rules>
-    
-
 </rules>

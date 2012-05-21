@@ -3,4 +3,7 @@
     <enabled>false</enabled>
     <name>lx.theme.multiclinicas</name>
     <enabled>false</enabled>
+    <name>lx.theme.leavesdew</name>
+    <enabled>false</enabled>
+    
 </theme>

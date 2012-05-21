@@ -94,7 +94,7 @@ nav { margin:0px 0px 26px 0px; position:relative; z-index:99;}
 
 .logo {padding:101px 0px 0px 64px; width:386px; height:87px;}
 
-h1.logoh1 {position:absolute; left:165px; /*left:372px;*/ bottom:-65px;}
+h1.logoh1 {position:absolute; left:165px; /*left:372px;*/ bottom:0px; height: 320px;}
 
 
 /*********************************content*************************************/
@@ -147,7 +147,8 @@ h1.logoh1 {position:absolute; left:165px; /*left:372px;*/ bottom:-65px;}
 
 .page-3-col-1 h2 {margin-bottom:2px;}
 .page-3-col-1>.wrapper {padding-top:18px;}
-.box-5 {width:456px; float:left; margin-right:28px;}
+/*.box-5 {width:456px; float:left; margin-right:28px;}*/
+.box-5 {width:155px; float:left; margin-right:28px;}
 .box-5 a.img-indent-3 {margin-top:6px !important; }
 .box-5 a.color-5 {display:inline-block; margin-bottom:3px;}
 .box-5 a.link {display:inline-block; margin-top:6px;}
