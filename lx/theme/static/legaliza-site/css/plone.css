@@ -1,0 +1,67 @@
+#portal-searchbox {
+    margin: -25px 10px;
+}
+
+#portal-personaltools{
+	margin-top:0px;
+}
+
+#aside {
+    width: 284px;
+}
+
+dl.portlet dt, div.portletAssignments div.portletHeader {
+    background: url("../design/title.png") no-repeat scroll 0 0 transparent;
+    font-size: 140%;
+    font-weight: normal;
+    height: 65px;
+    line-height: 45px;
+    margin: 0;
+    padding-left: 5px;
+    position: relative;
+    right: -4px;
+    width: 295px;
+}
+
+#content {
+    width: 660px;
+}
+
+#edit-bar{
+    text-align: justify;
+    width: 666px;
+}
+
+#edit-bar ul,
+#edit-bar dl,
+#contentActionMenus{
+	margin:0px;
+}
+
+input.searchButton {
+    background: url("../design/search-submit.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: transparent;
+    height: 24px;
+    margin-left: 6px;
+    width: 24px;
+}
+input.searchButton:hover{
+	cursor:pointer;
+}
+
+#searchGadget{
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #555555;
+    -moz-border-radius: 3px 3px 3px 3px;
+    padding: 3px;
+    border-color: #CCCCCC #EEEEEE #EEEEEE #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+	width: 23em;
+}
+
+dl dd.portletItem {
+    margin-top: -35px;
+    padding: 0;
+}

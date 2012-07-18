@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Prevent theme usage in zmi-->
+    <rules css:if-content="#visual-portal-wrapper">
+        <theme href="index.html" />
+    </rules>
+    <notheme if-path="presentation_view"/>
+    <notheme if-path="source_editor.htm"/>
+    <notheme if-path="ploneimage.htm"/>
+    <notheme if-path="anchor.htm"/>
+    <notheme if-path="table.htm"/>
+    <notheme if-path="attributes.htm"/>
+    <drop theme='//*[@id="slogan"]' />
+    <replace content="/html/head/title" theme="/html/head/title" />
+    <replace content="/html/head/base" theme="/html/head/base" />
+    <replace content="/html/head/meta" theme="/html/head/meta" />
+    <prepend content='/html/head' theme='/html/head' />
+
+    <copy attributes="href title" css:content='#portal-logo' css:theme='#header #logo a' />
+	<copy css:content='#portal-breadcrumbs' css:theme="#tray p.f-left"/>
+    <!-- Body class -->
+    <copy attributes="id class dir" css:theme="body" css:content="body"/>
+    <!-- Pull in global navigation menu-->
+    <copy content='//*[@id="portal-globalnav"]' theme='//*[@id="nav"]/ul' />
+    <!-- Drop global navigation menu's id-->
+    <drop attributes="id" css:content="#portal-globalnav"/>
+
+    <prepend css:content='#portal-header .hiddenStructure' css:theme='#main' />
+    <prepend content='//*[@id="portal-personaltools-wrapper"]' theme='//*[@id="main"]' />
+
+    <!-- Pull in content -->
+	<prepend css:content="#viewlet-above-content" css:theme-children="#tray"/>
+	<prepend css:content="#edit-bar" css:theme="#section"/>
+	<copy css:theme="#content" css:content-children="#content"/>
+	<before css:content="#viewlet-below-content" css:theme-children="#footer"/>
+    <!-- Drop global navigation menu's class-->
+    <drop attributes="class" css:content="#portal-column-content"/>
+    <!-- Pull in column 1 -->
+    <copy content-children='//*[@id="portal-column-one"]' theme='//*[@id="aside"]' />
+    <!-- Pull in search box -->
+    <replace content='//*[@id="portal-searchbox"]' theme='//*[@id="search"]' />
+    <!-- Drop global navigation menu's class-->
+    <drop attributes="class" css:content="#portal-column-one"/>
+    <copy content='//*[@id="portal-footer"]' theme='//*[@id="footer"]' />
+    <append content='//*[@id="portal-colophon"]' theme='//*[@id="footer"]' />
+    <append content='//*[@id="portal-siteactions"]' theme='//*[@id="footer"]' />
+
+    <!--copy content='//*[@id="portal-logo"]' theme='//*[@id="logo"]' /-->
+	<drop attributes="id" css:content="#portal-footer"/>
+	<copy attributes="src">
+		design/search-submit.png
+	</copy>
+    
+	
+
+</rules>
