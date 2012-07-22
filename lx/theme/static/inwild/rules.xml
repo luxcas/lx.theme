@@ -30,12 +30,14 @@
         <replace css:content='#portal-logo' css:theme-children=".logoh1" />
         <drop css:theme="#page-bottom" />
         <drop css:content="#portal-footer" />
-
+        
+                
+        <drop css:theme="#splash" />
+        <drop css:theme="#poptrox" />
         
         <!-- siteActions -->
         <replace css:content-children="#portal-siteactions li" css:theme-children="#site-action" />
-        <replace css:content-children="#portal-searchbox" css:theme-children="#search" />
-        <drop css:content=".searchSection" />
+
         <!-- Pull in global navigation menu-->
         <replace content-children='//*[@id="portal-globalnav"]' theme-children='//*[@id="menu"]' />
         <!-- Pull in personal tools -->

@@ -9,4 +9,8 @@
     <enabled>false</enabled>
     <name>lx.theme.proofing</name>
     <enabled>false</enabled>
+    <name>lx.theme.orangemint</name>
+    <enabled>false</enabled>
+    <name>lx.theme.inwild</name>
+    <enabled>false</enabled>
 </theme>

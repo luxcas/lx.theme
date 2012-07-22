@@ -11,6 +11,8 @@
   <plone:static directory="static/bylourenco" name="lx.theme.leavesdew" type="theme" />
   <plone:static directory="static/accumen" name="lx.theme.accumen" type="theme" />
   <plone:static directory="static/proofing" name="lx.theme.proofing" type="theme" />  
+  <plone:static directory="static/orangemint" name="lx.theme.orangemint" type="theme" />
+  <plone:static directory="static/inwild" name="lx.theme.inwild" type="theme" />
   
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".browser" />
