@@ -5,5 +5,8 @@
     <enabled>false</enabled>
     <name>lx.theme.leavesdew</name>
     <enabled>false</enabled>
-    
+    <name>lx.theme.accumen</name>
+    <enabled>false</enabled>
+    <name>lx.theme.proofing</name>
+    <enabled>false</enabled>
 </theme>

@@ -9,6 +9,8 @@
   <plone:static directory="static/advanced-spa-site" name="lx.theme.advancedspa" type="theme" />
   <plone:static directory="static/multiclinicas-site" name="lx.theme.multiclinicas" type="theme" />
   <plone:static directory="static/bylourenco" name="lx.theme.leavesdew" type="theme" />
+  <plone:static directory="static/accumen" name="lx.theme.accumen" type="theme" />
+  <plone:static directory="static/proofing" name="lx.theme.proofing" type="theme" />  
   
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".browser" />
