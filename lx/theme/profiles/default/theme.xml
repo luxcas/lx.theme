@@ -13,4 +13,8 @@
     <enabled>false</enabled>
     <name>lx.theme.inwild</name>
     <enabled>false</enabled>
+    <name>lx.theme.argon</name>
+    <enabled>false</enabled>
+    
+    
 </theme>
