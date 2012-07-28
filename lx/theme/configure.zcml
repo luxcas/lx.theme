@@ -14,6 +14,9 @@
   <plone:static directory="static/orangemint" name="lx.theme.orangemint" type="theme" />
   <plone:static directory="static/inwild" name="lx.theme.inwild" type="theme" />
   <plone:static directory="static/argon" name="lx.theme.argon" type="theme" />
+  <plone:static directory="static/legaliza-site" name="lx.theme.legaliza" type="theme" />
+  
+  
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".browser" />
   <include file="skins.zcml" />
