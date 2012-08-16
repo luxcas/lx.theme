@@ -3,7 +3,6 @@ RESET & HTML ELEMENTS
 -------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /*body {background-color:#00324b; color:#000;}*/
-body {background-color:#000; color:#000;}
 a {color:#00324B;}
 a:hover, a:active, a:focus {color:#000;}
 h2, h3 {color:#00324B;}
@@ -26,9 +25,9 @@ LAYOUT
 #tray p.f-left span {color:#999;}
 #section {background-color:#FFF;}
 #aside .title {color:#333; }
-#footer {color:#FFF;}
-#footer a {color:#FFF;}
-#footer a:hover {color:#FFF;}
+#footer {color:#000;}
+#footer a {color:#000;}
+#footer a:hover {color:#000;}
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------
 PAGE: HOMEPAGE
