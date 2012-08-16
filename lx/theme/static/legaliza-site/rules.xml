@@ -43,6 +43,10 @@
     <copy content-children='//*[@id="portal-column-one"]' theme='//*[@id="aside"]' />
     <!-- Pull in search box -->
     <replace content='//*[@id="portal-searchbox"]' theme='//*[@id="search"]' />
+	
+	<replace content='//*[@id="carousel-3259813357"]' theme='//*[@id="carrousel"]' />
+	
+	
     <!-- Drop global navigation menu's class-->
     <drop attributes="class" css:content="#portal-column-one"/>
     <copy content='//*[@id="portal-footer"]' theme='//*[@id="footer"]' />
