@@ -49,8 +49,8 @@ LAYOUT
 #tray p.f-left span {margin:0 5px;}
 #tray p.f-right img {display:block; float:left; margin-left:5px;}
 #section {background:url("../design/section.png") 0 0 repeat-y;}
-#content {float:left; width:670px; text-align:justify;}
-#content .padding {padding:20px 20px 15px 20px;}
+#content-site {float:left; width:670px; text-align:justify;}
+#content-site .padding {padding:20px 20px 15px 20px;}
 #aside {float:right; width:290px; _margin-right:-10px; padding:20px 0;}
 #aside p {margin:0;}
 #aside .title {position:relative; right:-10px; width:295px; height:65px; margin:0; padding-left:5px; background:url("../design/title.png") 0 0 no-repeat; font-size:140%; font-weight:normal; line-height:45px;}
