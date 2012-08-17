@@ -49,7 +49,7 @@ LAYOUT
 #tray p.f-left span {margin:0 5px;}
 #tray p.f-right img {display:block; float:left; margin-left:5px;}
 #section {background:url("../design/section.png") 0 0 repeat-y;}
-#content-site {float:left; width:670px; text-align:justify;}
+#content-site {float:left; width:670px; text-align:justify; }
 #content-site .padding {padding:20px 20px 15px 20px;}
 #aside {float:right; width:290px; _margin-right:-10px; padding:20px 0;}
 #aside p {margin:0;}
@@ -57,6 +57,8 @@ LAYOUT
 #aside .padding {padding:0 15px 15px 15px;}
 #footer {padding:25px 20px 0 20px; background:url("../design/footer.png") 0 0 no-repeat;}
 #footer p {margin:0;}
+
+#content{font-size: 100%;}
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------
 PAGE: HOMEPAGE
