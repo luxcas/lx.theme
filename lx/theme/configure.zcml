@@ -15,6 +15,7 @@
   <plone:static directory="static/inwild" name="lx.theme.inwild" type="theme" />
   <plone:static directory="static/argon" name="lx.theme.argon" type="theme" />
   <plone:static directory="static/legaliza-site" name="lx.theme.legaliza" type="theme" />
+  <plone:static directory="static/charme-beleza" name="lx.theme.charme" type="theme" />
   
   
   <five:registerPackage package="." initialize=".initialize" />

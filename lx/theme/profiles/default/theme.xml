@@ -17,5 +17,6 @@
     <enabled>false</enabled>
     <name>lx.theme.legaliza</name>
     <enabled>false</enabled>    
-    
+    <name>lx.theme.charme</name>
+    <enabled>false</enabled>    
 </theme>
